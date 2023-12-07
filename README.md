@@ -3,7 +3,7 @@
 ## Checklist
 
 - [ ] Database
-  - [ ] disel / rusqlite
+  - [ ] diesel / rusqlite
   - [ ] database.dbml
 - [ ] API
   - [ ] graphQL
