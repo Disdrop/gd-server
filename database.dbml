@@ -1,0 +1,25 @@
+Table accounts {
+  name text [pk, not null]
+  password text
+  created_by integer
+}
+
+Table workspaces {
+  id integer [pk, increment]
+  created_at numeric
+}
+
+Table files {
+  id integer [pk, increment]
+  name text
+  data blob
+  created_at numeric
+  created_by integer
+}
+
+Table history {
+  file_id integer
+}
+
+Ref: files.created_by > accounts.name
+Ref: history.file_id > files.id
